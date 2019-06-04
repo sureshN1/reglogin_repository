@@ -1,0 +1,18 @@
+{% load staticfiles %}
+<html>
+<head>
+
+</head>
+<body bgcolor="#7fffd4">
+<center><h1>
+    Student Registration form
+</h1></center>
+<div class="container" align="center">
+    <form method="post">
+        {{form.as_p}}
+        {%csrf_token%}
+        <input type="submit" class="btn btn_primary" value="register">
+    </form>
+</div>
+</body>
+</html>
